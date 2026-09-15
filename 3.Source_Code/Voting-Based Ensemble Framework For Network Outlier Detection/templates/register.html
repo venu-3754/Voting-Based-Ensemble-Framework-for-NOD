@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- Website - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>RegisterForm</title>
+    <link rel="stylesheet" href="static/assets1/style.css" />
+  </head>
+  <body>
+    <div class="center">
+      <h1>Register</h1>
+      <form action="/signup" method="GET">
+        <div class="txt_field">
+          <input type="text" name="user" required pattern="[A-Za-z].{6,}" title="Six or more Uppercase and lowercase letter req." />
+          <span></span>
+          <label>Username</label>
+        </div>
+        <div class="txt_field">
+          <input type="text" name="name" required  />
+          <span></span>
+          <label>Fullname</label>
+        </div>
+        <div class="txt_field">
+          <input type="text" name="email" id="email" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+          <span></span>
+          <label>Email</label>
+        </div>
+        <div class="txt_field">
+          <input type="text" name="mobile" id="phone" required pattern="[6-9]{1}[0-9]{9}" title="Phone number with 7-9 and remaing 9 digit with 0-9"/>
+          <span></span>
+          <label>Phone Number</label>
+        </div>
+        <div class="txt_field">
+          <input type="password" name="password" required autocomplete="off" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"/>
+          <span></span>
+          <label>Password</label>
+        </div>
+        <div class="pass">Forgot Password?</div>
+        <input type="submit" value="Register" />
+        <div class="signup_link">Already member! <a href="/login">Signin</a></div>
+      </form>
+    </div>
+  </body>
+</html>

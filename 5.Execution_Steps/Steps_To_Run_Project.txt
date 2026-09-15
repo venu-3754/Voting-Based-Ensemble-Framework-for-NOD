@@ -1,0 +1,40 @@
+PROJECT EXECUTION STEPS
+
+Project Title: Voting-Based Ensemble Framework for NOD
+
+Project Execution Steps
+1. Environment Setup
+Install Anaconda and create a virtual environment using Python 3.10.9.
+
+2. Project Initialization
+Navigate to the project folder and install required dependencies using requirements.txt.
+
+3. Dataset Integration
+Place datasets into appropriate folders:
+- CICIDS2017 → data/CICIDS2017 /
+- NSL-KDD → data/NSL-KDD/
+
+4. Model Training
+Launch Jupyter Notebook and execute the following files in order:
+- CICIDS2017.ipynb
+- NSL-KDD.ipynb
+
+5. Ensemble Model Loading
+Load pre-trained models from the models directory and combine predictions using ensemble voting.
+
+6. Run Flask Application
+Execute app.py to start the backend server, using the below command
+python app.py
+
+7. Access the Application
+Open browser and go to http://127.0.0.1:5000/ to access the interface.
+
+8.Register/Login
+Select Dataset
+Input Network Feautures
+Run Prediction
+
+9. Prediction Workflow
+Input features are preprocessed and passed through multiple models.
+Final output is determined using ensemble voting (Normal or Attack).
+

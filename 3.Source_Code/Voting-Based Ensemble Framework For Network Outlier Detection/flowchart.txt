@@ -1,0 +1,62 @@
+Notebook
+---------
+1. Importing the packages
+2. Exploring the dataset  
+	- CIC-IDS 2017
+	- NSL KDD
+3. Data Processing
+	- Removing Duplicate Data
+	- Drop Cleaning  
+	- Normalizer 
+	- Min-Max Scaler
+4. Data Visualization
+5. Label Encoder 
+	- Converting the Str to Int
+6. Feature Selection 
+	- PCA and CFS
+7. Splitting the dataset in train and validation 
+8. Building the model 
+	- PCA
+	
+		- SVM with GA
+		- Naive Bayes with GA
+		- DecisionTree
+		- RandomForest
+		- Voting Classifier (Bag with RF + Boosted DT)
+	- CFS	
+		- SVM with GA
+		- Naive Bayes with GA
+		- DecisionTree
+		- RandomForest
+		- Voting Classifier (Bag with RF + Boosted DT)
+
+11. Training and Building the model
+12. Comparing the models with accuracy, precision, recall, f1 score,  
+13. Comparison graphs are generated with scores of all models.
+
+
+
+
+
+
+FrontEnd
+--------
+
+14. Frontend is developed with help of Flask Framework, along with Registration and Login setup with support of Sqlite DB
+15. For the frontend we used the data for predicting the attack detection
+16. User gives input as Feature Values 
+17. The given input is preprocessed for prediction
+18. Trained model is used for prediction
+19. Final outcome is displayed through frontend
+
+
+Extension
+----------
+
+In the base paper the author mentioned to use NSL KDD & CICIDS data for analysis and predict the IDS attack using SVM and NB with Genetic Algorithm,
+As an extension we applied an ensemble method  combining the predictions of multiple individual models to produce a more robust and accurate final prediction. 
+However, we can further enhance the performance by ensemble techniques such as Voting Classifier for analysis the data,
+As an extension we can build the front end using the flask framework for user testing and with user authentication.
+
+
+
