@@ -269,4 +269,6 @@ This project, **Voting-Based Ensemble Framework for Network Outlier Detection**,
 
 ## License
 
-This project is intended for academic and educational purposes. Add a license file before public distribution or commercial reuse.
+This project is licensed under the [MIT License](LICENSE).
+
+Copyright © 2026 Songa Venugopal.
