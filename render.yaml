@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: network-outlier-detection
+    runtime: python
+    plan: free
+    rootDir: 3.Source_Code/Voting-Based Ensemble Framework For Network Outlier Detection
+    buildCommand: pip install -r requirements-render.txt
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT
+    autoDeployTrigger: commit
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.13
