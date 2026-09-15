@@ -4,6 +4,10 @@ A machine-learning-based network intrusion and outlier detection system that cla
 
 The project uses multiple classification algorithms and a voting-based ensemble approach to identify normal traffic and cyberattack categories through a Flask web application.
 
+## Live Demo
+
+🚀 [Open the live application](https://network-outlier-detection.onrender.com)
+
 ## Project Overview
 
 Network attacks are increasing in scale and complexity, making early and accurate intrusion detection essential. This project processes network traffic data, applies preprocessing and feature-selection techniques, trains multiple machine-learning models, and combines predictions through ensemble voting.
